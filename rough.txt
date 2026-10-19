@@ -1,0 +1,5 @@
+.cards__viewport {
+  overflow: hidden;
+  padding-block: 14px;
+  margin-block: -14px;
+}

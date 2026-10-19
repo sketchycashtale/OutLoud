@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An editorial introduction to OutLoud."
+    />
+    <title>About — OutLoud</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="about" aria-labelledby="about-heading">
+        <div class="about__intro">
+          <h1 class="about__heading" id="about-heading">
+            <span class="about__word">about</span>
+            <span class="about__arrow" aria-hidden="true">↗</span>
+          </h1>
+
+          <div class="about__message">
+            <p class="about__eyebrow">A note about OutLoud</p>
+            <h2>Your introductory message goes here.</h2>
+            <p class="about__description">
+              Replace this placeholder with the words you want people to hear.
+            </p>
+          </div>
+        </div>
+
+        <div class="cards" aria-label="Highlights">
+          <div class="cards__viewport">
+            <div class="cards__track" id="cards-track">
+              <div class="cards__set" role="list">
+                <article class="card card--chart" role="listitem">
+                  <div class="card__heading">
+                    <h3>Community snapshot</h3>
+                    <span class="card__note">Illustrative</span>
+                  </div>
+                  <svg
+                    class="bar-chart"
+                    viewBox="0 0 300 150"
+                    role="img"
+                    aria-label="Illustrative bar chart with four sample values"
+                  >
+                    <path class="chart-grid" d="M30 22H290M30 62H290M30 102H290M30 142H290" />
+                    <path class="chart-axis" d="M30 14V142H292" />
+                    <rect class="chart-bar chart-bar--one" x="52" y="63" width="38" height="79" rx="5" />
+                    <rect class="chart-bar chart-bar--two" x="111" y="39" width="38" height="103" rx="5" />
+                    <rect class="chart-bar chart-bar--three" x="170" y="86" width="38" height="56" rx="5" />
+                    <rect class="chart-bar chart-bar--four" x="229" y="71" width="38" height="71" rx="5" />
+                    <g class="chart-labels">
+                      <text x="71" y="149" text-anchor="middle">A</text>
+                      <text x="130" y="149" text-anchor="middle">B</text>
+                      <text x="189" y="149" text-anchor="middle">C</text>
+                      <text x="248" y="149" text-anchor="middle">D</text>
+                    </g>
+                  </svg>
+                  <p class="card__caption">Sample values · not OutLoud data</p>
+                </article>
+
+                <article class="card card--text" role="listitem">
+                  <span class="card__note">Words / 01</span>
+                  <p class="card__statement">A place for your message.</p>
+                  <span class="card__caption">Replace this text</span>
+                </article>
+
+                <article class="card card--chart card--donut" role="listitem">
+                  <div class="card__heading">
+                    <h3>At a glance</h3>
+                    <span class="card__note">Illustrative</span>
+                  </div>
+                  <div class="donut-wrap">
+                    <svg
+                      class="donut-chart"
+                      viewBox="0 0 120 120"
+                      role="img"
+                      aria-label="Illustrative chart divided into four sample segments"
+                    >
+                      <circle class="donut-track" cx="60" cy="60" r="42" />
+                      <circle class="donut-segment donut-segment--one" cx="60" cy="60" r="42" />
+                      <circle class="donut-segment donut-segment--two" cx="60" cy="60" r="42" />
+                      <circle class="donut-segment donut-segment--three" cx="60" cy="60" r="42" />
+                      <circle class="donut-segment donut-segment--four" cx="60" cy="60" r="42" />
+                      <text class="donut-center" x="60" y="57" text-anchor="middle">DATA</text>
+                      <text class="donut-center donut-center--small" x="60" y="72" text-anchor="middle">SAMPLE</text>
+                    </svg>
+                    <ul class="donut-legend" aria-label="Illustrative sample segments">
+                      <li><span></span>One</li>
+                      <li><span></span>Two</li>
+                      <li><span></span>Three</li>
+                      <li><span></span>Four</li>
+                    </ul>
+                  </div>
+                  <p class="card__caption">Sample proportions · not OutLoud data</p>
+                </article>
+
+                <article class="card card--text card--text-wide" role="listitem">
+                  <span class="card__note">Words / 02</span>
+                  <p class="card__statement">Make room for what matters.</p>
+                  <span class="card__caption">Replace this text</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
