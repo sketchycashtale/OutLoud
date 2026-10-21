@@ -8,18 +8,31 @@
       content="An editorial introduction to OutLoud."
     />
     <title>About — OutLoud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./main.js" defer></script>
   </head>
   <body>
     <main>
       <section class="about" aria-labelledby="about-heading">
-        <div class="about__intro">
+        <header class="site-header">
           <h1 class="about__heading" id="about-heading">
-            <span class="about__word">about</span>
-            <span class="about__arrow" aria-hidden="true">↗</span>
+            <span class="about__word">About</span>
           </h1>
+          <nav class="site-nav" aria-label="Main navigation">
+            <a class="site-nav__library" href="#library">Library</a>
+            <a class="site-nav__sessions" href="#sessions">Sessions</a>
+            <a class="site-nav__faq" href="#faq">FAQ</a>
+            <a class="site-nav__connect" href="#connectwu">ConnectWU</a>
+          </nav>
+        </header>
 
+        <div class="about__intro">
           <div class="about__message">
             <p class="about__eyebrow">A note about OutLoud</p>
             <h2>Your introductory message goes here.</h2>
