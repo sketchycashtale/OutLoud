@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Frequently asked questions about OutLoud."
+    />
+    <title>FAQs — OutLoud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./faq.css" />
+    <script src="./faq.js" defer></script>
+  </head>
+  <body>
+    <main class="faq-page">
+      <header class="faq-header">
+        <h1 class="faq-header__title">FAQs</h1>
+        <nav class="faq-nav" aria-label="Main navigation">
+          <a href="./index.html">About</a>
+          <a href="#library">Library</a>
+          <a href="#sessions">Sessions</a>
+          <a class="is-current" href="./faq.html" aria-current="page">FAQs</a>
+          <a href="#connectwu">ConnectWU</a>
+        </nav>
+      </header>
+
+      <section class="faq-showcase" aria-label="Frequently asked questions">
+        <div
+          class="faq-stage"
+          id="faq-stage"
+          role="group"
+          aria-roledescription="carousel"
+          aria-label="FAQ cards"
+          tabindex="0"
+        >
+          <article class="faq-card faq-card--one is-active" data-faq-card aria-hidden="false">
+            <h2>What the fk is your name, nga</h2>
+          </article>
+
+          <article class="faq-card faq-card--two" data-faq-card aria-hidden="true">
+            <h2>What do we do here nga?</h2>
+          </article>
+
+          <article class="faq-card faq-card--three" data-faq-card aria-hidden="true">
+            <h2>Do you ngas have food?</h2>
+          </article>
+
+          <article class="faq-card faq-card--four" data-faq-card aria-hidden="true">
+            <h2>I'll only only join if my girlfriend is there!! I love my girlfriend</h2>
+          </article>
+
+          <article class="faq-card faq-card--five" data-faq-card aria-hidden="true">
+            <h2>Is guns allowed in the class?</h2>
+          </article>
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
