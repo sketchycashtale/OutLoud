@@ -3,64 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Frequently asked questions about OutLoud."
-    />
-    <title>FAQs — OutLoud</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./faq.css" />
-    <script src="./faq.js" defer></script>
+    <meta name="theme-color" content="#f0eddf" />
+    <meta name="description" content="Frequently asked questions about OutLoud, the Library, and our operations." />
+    <title>FAQ — OutLoud</title>
+    <link rel="stylesheet" href="./site.css" />
+    <script src="./site.js" defer></script>
   </head>
   <body>
-    <main class="faq-page">
-      <header class="faq-header">
-        <h1 class="faq-header__title">FAQs</h1>
-        <nav class="faq-nav" aria-label="Main navigation">
-          <a href="./index.html">About</a>
-          <a href="#library">Library</a>
-          <a href="#sessions">Sessions</a>
-          <a class="is-current" href="./faq.html" aria-current="page">FAQs</a>
-          <a href="#connectwu">ConnectWU</a>
-        </nav>
-      </header>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="OutLoud home">
+        <span class="brand-mark" aria-hidden="true">O</span>
+        <span>OUTLOUD<span class="brand-caption">WORDS · MOVEMENT · COMMUNITY</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="./index.html">Home</a><a href="./library.html">Library</a>
+        <a href="./project.html">Project</a><a href="./faq.html" aria-current="page">FAQ</a><a href="./about.html">About</a>
+        <a class="nav-cta" href="./connectws.html">ConnectWS <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
 
-      <section class="faq-showcase" aria-label="Frequently asked questions">
-        <div
-          class="faq-stage"
-          id="faq-stage"
-          role="group"
-          aria-roledescription="carousel"
-          aria-label="FAQ cards"
-          tabindex="0"
-        >
-          <article class="faq-card faq-card--one is-active" data-faq-card aria-hidden="false">
-            <h2>What the fk is your name, nga</h2>
-          </article>
-
-          <article class="faq-card faq-card--two" data-faq-card aria-hidden="true">
-            <h2>What do we do here nga?</h2>
-          </article>
-
-          <article class="faq-card faq-card--three" data-faq-card aria-hidden="true">
-            <h2>Do you ngas have food?</h2>
-          </article>
-
-          <article class="faq-card faq-card--four" data-faq-card aria-hidden="true">
-            <h2>I'll only only join if my girlfriend is there!! I love my girlfriend</h2>
-          </article>
-
-          <article class="faq-card faq-card--five" data-faq-card aria-hidden="true">
-            <h2>Is guns allowed in the class?</h2>
-          </article>
+    <main class="page-main">
+      <section class="page-intro wrap">
+        <div>
+          <span class="micro-label page-number">QUICK BRIEF / 04—09</span>
+          <p class="eyebrow">Good questions belong here too</p>
+          <h1 class="display-title">A few things<br /><em>to know.</em></h1>
         </div>
+        <p class="lead">Start here for the short version of what OutLoud is, what happens in the group, and how to get in touch.</p>
+      </section>
 
+      <section class="faq-list wrap" aria-label="Frequently asked questions">
+        <details class="faq-item">
+          <summary><span class="faq-number">01</span><span class="faq-question">What is OutLoud?</span><span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>OutLoud is a community for expressing ideas, building confidence through practice, and sharing what the group does. That includes writing, thoughtful conversation, and showing up for one another.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-number">02</span><span class="faq-question">What is the Library?</span><span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>The Library is an archive for community writing—articles, literature, reflections, and other pieces people want to share. Select a piece to open and read it. The current entries on this demo site are clearly marked as samples.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-number">03</span><span class="faq-question">What does 5Klick involve?</span><span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>It is the group's morning running practice. Members share photographs and personal milestones, celebrating consistency and effort rather than comparing everyone's pace.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-number">04</span><span class="faq-question">What happens at a Court of Inquiry?</span><span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>The group meets twice a week to explore a chosen topic. A session can include an icebreaker, a main speaker, open discussion, and a written report of the conclusion and remaining questions.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-number">05</span><span class="faq-question">Do I need to be a confident speaker already?</span><span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>No. OutLoud is about practice, not performing perfection. You can listen, write, ask a question, or take a small turn when you are ready.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-number">06</span><span class="faq-question">Can I contribute an article or a field note?</span><span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>Yes. Use ConnectWS to send a note about your idea. The writing on the public Library should be shared with the writer's permission; the examples there are placeholders, not actual member submissions.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-number">07</span><span class="faq-question">How can I join or suggest a change?</span><span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>Open ConnectWS and tell us whether you are interested in joining or have a suggestion. The current form prepares an email draft; this static site does not send or store your submission.</p></div>
+        </details>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>OUTLOUD / FREQUENTLY ASKED</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="./about.html">About</a><a href="./project.html">Operations</a><a href="./connectws.html">Still wondering? ↗</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

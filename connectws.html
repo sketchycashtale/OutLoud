@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f0eddf" />
+    <meta name="description" content="Get in touch with OutLoud to ask a question, share an idea, or ask about joining." />
+    <title>ConnectWS — OutLoud</title>
+    <link rel="stylesheet" href="./site.css" />
+    <script src="./site.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="OutLoud home">
+        <span class="brand-mark" aria-hidden="true">O</span>
+        <span>OUTLOUD<span class="brand-caption">WORDS · MOVEMENT · COMMUNITY</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="./index.html">Home</a><a href="./library.html">Library</a>
+        <a href="./project.html">Project</a><a href="./faq.html">FAQ</a><a href="./about.html">About</a>
+        <a class="nav-cta" href="./connectws.html" aria-current="page">ConnectWS <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-intro wrap">
+        <div>
+          <span class="micro-label page-number">THE OPEN CHANNEL / 06</span>
+          <p class="eyebrow">A note can be a beginning</p>
+          <h1 class="display-title">Connect<br /><em>with us.</em></h1>
+        </div>
+        <p class="lead">Want to join the community, send a piece of writing, ask a question, or suggest a change? Tell us a little about it.</p>
+      </section>
+
+      <section class="contact-layout wrap" aria-label="Contact OutLoud">
+        <aside class="contact-aside">
+          <p class="eyebrow">Before you send</p>
+          <h2>Make the first move.</h2>
+          <p>Your note can be about joining, contributing to the Library, an operation, or an idea you think OutLoud should hear.</p>
+          <p class="notice">This is a static website without a connected inbox. The form opens a draft in your email app; it does not transmit or store your information. Add OutLoud's email address before sending.</p>
+        </aside>
+
+        <form class="contact-form">
+          <div class="form-field">
+            <label for="contact-name">Your name</label>
+            <input id="contact-name" name="name" autocomplete="name" required />
+          </div>
+          <div class="form-field">
+            <label for="contact-email">Email address</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-field">
+            <label for="contact-phone">Mobile number <span class="micro-label">(optional)</span></label>
+            <input id="contact-phone" name="phone" type="tel" autocomplete="tel" />
+          </div>
+          <div class="form-field form-field--wide">
+            <label for="contact-message">Your note</label>
+            <textarea id="contact-message" name="message" placeholder="I’m writing about…" required></textarea>
+          </div>
+          <div class="form-field form-field--wide">
+            <label for="contact-letter">Attach a letter <span class="micro-label">(optional)</span></label>
+            <input id="contact-letter" name="letter" type="file" accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png" />
+            <span class="form-help">Your file will not be uploaded. Attach it to the email draft yourself before sending.</span>
+          </div>
+          <button class="button button--dark form-submit" type="submit">Prepare email draft <span class="button-arrow" aria-hidden="true">↗</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>OUTLOUD / CONNECTWS</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="./faq.html">FAQ</a><a href="./about.html">About OutLoud</a><a href="./index.html">Back home ↗</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
