@@ -1,124 +1,236 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="archive-document">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f0eddf" />
+    <meta name="theme-color" content="#151515" />
     <meta
       name="description"
-      content="OutLoud is a community for finding your voice, showing up for one another, and sharing what the group does."
+      content="Browse the OutLoud community archive of writing, morning field notes, and conversations."
     />
-    <title>OutLoud — Find your voice. Then use it.</title>
+    <title>OutLoud — Repository of Voices</title>
     <link rel="stylesheet" href="./site.css" />
+    <link rel="stylesheet" href="./archive.css" />
     <script src="./site.js" defer></script>
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="./index.html" aria-label="OutLoud home">
-        <span class="brand-mark" aria-hidden="true">O</span>
-        <span>OUTLOUD<span class="brand-caption">WORDS · MOVEMENT · COMMUNITY</span></span>
-      </a>
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Open navigation"
-        aria-expanded="false"
-        aria-controls="primary-nav"
-      ><span></span></button>
-      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
-        <a href="./index.html" aria-current="page">Home</a>
-        <a href="./library.html">Library</a>
-        <a href="./project.html">Project</a>
-        <a href="./faq.html">FAQ</a>
-        <a href="./about.html">About</a>
-        <a class="nav-cta" href="./connectws.html">ConnectWS <span aria-hidden="true">↗</span></a>
-      </nav>
-    </header>
+  <body class="archive-page">
+    <main class="archive-stage">
+      <p class="archive-motto">
+        <span>A community built to</span>
+        <span>speak, listen, and show up.</span>
+      </p>
 
-    <main class="page-main">
-      <section class="home-hero wrap" aria-labelledby="home-title">
-        <div class="hero-copy">
-          <p class="eyebrow">A community practice in showing up</p>
-          <h1 class="display-title" id="home-title">Find your voice.<br /><em>Then use it.</em></h1>
-          <p class="lead">
-            A place to speak without waiting for perfect words, listen with intent, and make
-            something of the time we share.
-          </p>
-          <div class="hero-actions">
-            <a class="button button--dark" href="./project.html">Explore what we do <span class="button-arrow" aria-hidden="true">↗</span></a>
-            <a class="button" href="./library.html">Enter the library <span class="button-arrow" aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="hero-art" aria-label="OutLoud's hand-drawn burgundy emblem">
-          <img src="./assets/OutLoudRadiant.svg" alt="" />
-          <div class="orbit-note">SPEAK<br />UP<br />SHOW UP</div>
-        </div>
-        <div class="hero-index micro-label">
-          <span>FIELD NOTES / 001</span>
-          <span>Made of words, miles &amp; good questions</span>
-        </div>
-      </section>
-
-      <div class="ticker" aria-label="Words, movement, conversation, community">
-        <div class="ticker-track" aria-hidden="true">
-          <span>WORDS WITH ROOM TO GROW</span><b>✳</b><span>MILES WITH MEANING</span><b>✳</b>
-          <span>BETTER QUESTIONS</span><b>✳</b><span>BRAVER VOICES</span><b>✳</b>
-          <span>WORDS WITH ROOM TO GROW</span><b>✳</b><span>MILES WITH MEANING</span><b>✳</b>
-          <span>BETTER QUESTIONS</span><b>✳</b><span>BRAVER VOICES</span><b>✳</b>
-        </div>
-      </div>
-
-      <section class="section wrap" aria-labelledby="operations-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Different ways to show up</p>
-            <h2 id="operations-title">The work is the point.</h2>
-          </div>
-          <p>Two ongoing operations. One shared habit: turn up, take part, and bring something back to the group.</p>
-        </div>
-        <div class="home-cards">
-          <article class="home-card home-card--signal">
-            <span class="micro-label">Operation / 01</span>
-            <span class="card-index">MOVE · TOGETHER</span>
-            <div>
-              <h3>5Klick</h3>
-              <p>Morning miles, shared photographs, and the small milestones that add up.</p>
-              <a class="card-link" href="./project.html#fiveklick">See the operation <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-          <article class="home-card">
-            <span class="micro-label">Operation / 02</span>
-            <span class="card-index">THINK · TOGETHER</span>
-            <div>
-              <h3>Court of Inquiry</h3>
-              <p>A room for specific questions, open exchange, and a report worth carrying forward.</p>
-              <a class="card-link" href="./project.html#coi">See the operation <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section wrap manifesto" aria-labelledby="manifesto-title">
-        <div>
-          <p class="eyebrow">The OutLoud idea</p>
-          <h2 id="manifesto-title">Courage is a practice, not a personality.</h2>
-        </div>
-        <div class="manifesto-copy">
-          <p><strong>You don't have to be the loudest person in the room.</strong> You just have to be willing to take your turn: write the thought, ask the question, hear someone out, and try again.</p>
-          <p>OutLoud is a community space for the things we make and do together. The Library gathers our writing; the operations keep us moving and thinking as a group.</p>
-          <a class="card-link" href="./about.html">A little more about us <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <p>OUTLOUD / WORDS · MOVEMENT · COMMUNITY</p>
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="./library.html">Library</a><a href="./project.html">Project</a>
-          <a href="./faq.html">FAQ</a><a href="./connectws.html">ConnectWS ↗</a>
+      <header class="site-header">
+        <a class="brand" href="./index.html" aria-label="OutLoud home">
+          <span class="brand-mark" aria-hidden="true">O</span>
+          <span>OUTLOUD<span class="brand-caption">WORDS · MOVEMENT · COMMUNITY</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="./index.html" aria-current="page">Home</a>
+          <a href="./library.html">Library</a>
+          <a href="./project.html">Project</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="./about.html">About</a>
+          <a class="nav-cta" href="./connectws.html">ConnectWS <span aria-hidden="true">↗</span></a>
         </nav>
-      </div>
-    </footer>
+      </header>
+
+      <section class="archive-overview" aria-labelledby="archive-title">
+        <p class="archive-breadcrumb">Source / Community / Record / OutLoud</p>
+        <h1 id="archive-title">Repository of Voices</h1>
+        <div class="archive-prose">
+          <p>
+            A living collection of writing, morning field notes, and conversations shared by the
+            OutLoud community. Every piece begins with someone willing to speak.
+          </p>
+          <p>
+            Follow the ordinary evidence of showing up: a run log, a thought worth keeping, a
+            report made together. Open an artifact to see the story behind it.
+          </p>
+        </div>
+      </section>
+
+      <section class="archive-collage" aria-label="Featured community artifacts">
+        <button
+          class="archive-artifact artifact-paper artifact-paper--blue"
+          type="button"
+          data-title="A morning, marked"
+          data-kind="5Klick / Field note"
+          data-detail="A sample activity card for the photographs and personal milestones shared by the 5Klick group. Replace this visual with a real community field note when one is ready to publish."
+          data-link="./project.html#fiveklick"
+        >
+          <span class="artifact-visual paper-blue" aria-hidden="true">
+            <span class="paper-eyebrow">5KLICK / MORNING RECORD</span>
+            <strong>SHOWING UP<br />IS THE MILESTONE.</strong>
+            <span class="paper-grid">
+              <span>DATE <i>FIELD NOTE</i></span>
+              <span>PACE <i>PERSONAL</i></span>
+              <span>ROUTE <i>TOGETHER</i></span>
+            </span>
+            <span class="paper-number">SAMPLE / 001</span>
+          </span>
+          <span class="artifact-sr-label">Open the sample 5Klick field note</span>
+        </button>
+
+        <button
+          class="archive-artifact artifact-paper artifact-paper--folder"
+          type="button"
+          data-title="A note from the field"
+          data-kind="Community / Sample record"
+          data-detail="A placeholder for the small notes, reflections, and records the group chooses to keep. This is sample artwork, not a real member submission."
+          data-link="./library.html"
+        >
+          <span class="artifact-visual paper-folder" aria-hidden="true">
+            <span class="paper-eyebrow">OUTLOUD / FIELD COPY</span>
+            <strong>COMMUNITY<br />RECORD</strong>
+            <span class="folder-lines"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="folder-stamp">OPEN<br />FILE</span>
+            <span class="paper-number">WORDS · MOVEMENT · PEOPLE</span>
+          </span>
+          <span class="artifact-sr-label">Open the sample community record</span>
+        </button>
+
+        <button
+          class="archive-artifact artifact-paper artifact-paper--report"
+          type="button"
+          data-title="Questions, carried forward"
+          data-kind="Court of Inquiry / Report template"
+          data-detail="A sample report layout for a Court of Inquiry session. Real reports can record the icebreaker, main speaker, discussion, and conclusion."
+          data-link="./project.html#coi"
+        >
+          <span class="artifact-visual paper-report" aria-hidden="true">
+            <span class="paper-eyebrow">COURT OF INQUIRY / REPORT</span>
+            <strong>QUESTIONS<br />WORTH KEEPING.</strong>
+            <svg viewBox="0 0 260 90" focusable="false">
+              <path d="M4 13H256M4 44H256M4 75H256" />
+              <path class="report-plot" d="M4 65c25-4 20-30 43-25s20 28 41 18 19-39 44-31 22 42 45 29 20-32 40-21 23 25 39 5" />
+            </svg>
+            <span class="paper-number">SESSION REPORT / TEMPLATE</span>
+          </span>
+          <span class="artifact-sr-label">Open the Court of Inquiry report template</span>
+        </button>
+
+        <button
+          class="archive-artifact artifact-photo"
+          type="button"
+          data-title="Room for a conversation"
+          data-kind="Court of Inquiry / Placeholder image"
+          data-detail="A temporary illustration for a Court of Inquiry gathering. Replace it with a community-approved photograph when you have one."
+          data-link="./project.html#coi"
+        >
+          <span class="artifact-visual photo-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 620 340" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="620" height="340" fill="#c6c5bd" />
+              <path d="M0 0h620v188H0Z" fill="#deddd6" />
+              <path d="M28 34h162v110H28Zm201 0h162v110H229Zm201 0h162v110H430Z" fill="#888981" />
+              <path d="M36 42h145v95H36Zm201 0h145v95H237Zm201 0h145v95H438Z" fill="#d0cfc8" />
+              <path d="M0 168h620v16H0Z" fill="#575951" />
+              <path d="M0 201h620v139H0Z" fill="#72736c" />
+              <ellipse cx="314" cy="254" rx="194" ry="37" fill="#3c3e39" />
+              <path d="M122 237h386v19H122Z" fill="#292b27" />
+              <g fill="#242622">
+                <circle cx="153" cy="183" r="15" /><path d="M138 198h30l20 53h-69Zm-7 47h22v48h-22Zm30 0h22v48h-22Z" />
+                <circle cx="257" cy="177" r="15" /><path d="M242 192h30l20 53h-69Zm-7 47h22v48h-22Zm30 0h22v48h-22Z" />
+                <circle cx="370" cy="178" r="15" /><path d="M355 193h30l20 53h-69Zm-7 47h22v48h-22Zm30 0h22v48h-22Z" />
+                <circle cx="473" cy="185" r="15" /><path d="M458 200h30l20 53h-69Zm-7 47h22v48h-22Zm30 0h22v48h-22Z" />
+              </g>
+              <path d="M0 326h620" stroke="#f1eee5" stroke-width="4" opacity=".75" />
+            </svg>
+            <span class="photo-caption">COI / A PLACE TO THINK TOGETHER</span>
+          </span>
+          <span class="artifact-sr-label">Open the placeholder Court of Inquiry gathering image</span>
+        </button>
+
+        <button
+          class="archive-artifact artifact-photo artifact-photo--run"
+          type="button"
+          data-title="Before the city wakes"
+          data-kind="5Klick / Morning run"
+          data-detail="A placeholder illustration for the group's early morning runs. Replace it with a community-approved 5Klick photograph when one is ready."
+          data-link="./project.html#fiveklick"
+        >
+          <span class="artifact-visual run-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 620 340" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="620" height="340" fill="#d9b78f" />
+              <path d="M0 0h620v190H0Z" fill="#e9c9a1" />
+              <path d="M0 130 105 82l92 56 105-76 123 82 96-57 99 42v92H0Z" fill="#a58d76" />
+              <circle cx="451" cy="93" r="44" fill="#f3e4bf" />
+              <path d="M0 194q155-72 310 0t310 0v146H0Z" fill="#526b63" />
+              <path d="M0 256q155-63 310 0t310 0v84H0Z" fill="#394b46" />
+              <path d="m205 340 142-145h68L486 340Z" fill="#857d70" />
+              <path d="m324 340 48-145h14l47 145Z" fill="#d7c6a9" opacity=".8" />
+              <g fill="#28332f">
+                <circle cx="204" cy="189" r="12" />
+                <path d="m194 202 21 3 12 38-31 6-14-26Zm-4 44 14 2-9 42-13-3Zm16 2 13-3 15 37-12 5Z" />
+                <circle cx="271" cy="172" r="12" />
+                <path d="m260 185 21 4 14 38-31 7-14-28Zm-4 45 14 3-10 42-13-4Zm18 2 13-4 16 36-12 6Z" />
+                <circle cx="340" cy="190" r="12" />
+                <path d="m329 203 21 3 13 38-31 7-14-27Zm-3 45 14 3-10 41-13-4Zm18 2 13-4 16 36-12 6Z" />
+              </g>
+            </svg>
+            <span class="photo-caption">5KLICK / BEFORE THE CITY WAKES</span>
+          </span>
+          <span class="artifact-sr-label">Open the placeholder 5Klick morning-run image</span>
+        </button>
+
+        <button
+          class="archive-artifact artifact-console"
+          type="button"
+          data-title="The OutLoud field instrument"
+          data-kind="Archive object / Placeholder artwork"
+          data-detail="A made-for-now vector illustration inspired by archival equipment. Clickable placeholders will be replaced with your supplied artwork when it is ready."
+          data-link="./library.html"
+        >
+          <span class="artifact-visual console-shell" aria-hidden="true">
+            <span class="console-face">
+              <span class="console-heading"><span>OUTLOUD / FIELD INSTRUMENT</span><b>05—K</b></span>
+              <span class="console-top">
+                <span class="meter-window">
+                  <svg viewBox="0 0 240 120" focusable="false">
+                    <path class="meter-arc" d="M24 99a96 96 0 0 1 192 0" />
+                    <path class="meter-tick" d="M34 88 26 82m22-15-8-7m34-15-3-10m39 5V29m39 6-3 10m35 15-8 7m22 15-8 6" />
+                    <path class="meter-needle" d="m120 94 44-48" />
+                    <circle cx="120" cy="94" r="7" />
+                    <text x="23" y="112">0</text><text x="105" y="25">50</text><text x="203" y="112">100</text>
+                  </svg>
+                </span>
+                <span class="console-screen">
+                  <span class="screen-slot"></span>
+                  <span class="screen-lines"><i></i><i></i><i></i><i></i></span>
+                  <span class="screen-reading">VOICE / SIGNAL / OPEN</span>
+                </span>
+              </span>
+              <span class="console-bottom">
+                <span class="console-port"><i></i><small>INPUT</small></span>
+                <span class="console-port"><i></i><small>OUTPUT</small></span>
+                <span class="console-knob console-knob--wine"><i></i></span>
+                <span class="console-knob console-knob--gold"><i></i></span>
+                <span class="console-slider"><i></i></span>
+              </span>
+              <span class="console-foot"><span>FIELD NOTES / 01</span><span>ARCHIVE SERIES · SAMPLE</span></span>
+            </span>
+          </span>
+          <span class="artifact-sr-label">Open the OutLoud archive instrument artwork</span>
+        </button>
+
+      </section>
+
+      <dialog class="artifact-dialog" aria-labelledby="artifact-dialog-title">
+        <div class="artifact-dialog-inner">
+          <div class="dialog-art" aria-hidden="true"></div>
+          <section class="dialog-copy">
+            <div class="dialog-heading">
+              <p class="dialog-kind"></p>
+              <button class="dialog-close" type="button" aria-label="Close artifact">×</button>
+            </div>
+            <p class="dialog-index">OUTLOUD / COMMUNITY ARCHIVE</p>
+            <h2 id="artifact-dialog-title"></h2>
+            <p class="dialog-detail"></p>
+            <a class="dialog-link" href="./library.html">Explore more <span aria-hidden="true">↗</span></a>
+          </section>
+        </div>
+      </dialog>
+    </main>
   </body>
 </html>

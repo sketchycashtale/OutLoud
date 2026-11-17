@@ -3,127 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f0eddf" />
+    <meta name="theme-color" content="#151515" />
     <meta name="description" content="Explore 5Klick and Court of Inquiry, two OutLoud community operations." />
     <title>Project — OutLoud</title>
     <link rel="stylesheet" href="./site.css" />
+    <link rel="stylesheet" href="./project.css" />
     <script src="./site.js" defer></script>
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="./index.html" aria-label="OutLoud home">
-        <span class="brand-mark" aria-hidden="true">O</span>
-        <span>OUTLOUD<span class="brand-caption">WORDS · MOVEMENT · COMMUNITY</span></span>
-      </a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
-      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
-        <a href="./index.html">Home</a><a href="./library.html">Library</a>
-        <a href="./project.html" aria-current="page">Project</a><a href="./faq.html">FAQ</a><a href="./about.html">About</a>
-        <a class="nav-cta" href="./connectws.html">ConnectWS <span aria-hidden="true">↗</span></a>
-      </nav>
-    </header>
+  <body class="project-page">
+    <main class="project-main">
+      <section class="project-split" aria-label="OutLoud projects">
+        <header class="project-topbar">
+          <a class="project-toplink" href="./index.html">HOME</a>
+          <a class="project-wordmark" href="./index.html" aria-label="OutLoud home">SPLIT</a>
+          <a class="project-toplink project-contact" href="./connectws.html">CONTACT</a>
+        </header>
 
-    <main class="page-main">
-      <section class="page-intro wrap">
-        <div>
-          <span class="micro-label page-number">OPERATIONS / 02 ACTIVE</span>
-          <p class="eyebrow">The group, in motion</p>
-          <h1 class="display-title">Show up.<br /><em>Do the work.</em></h1>
-        </div>
-        <p class="lead">Choose an operation to see what it is, how the group takes part, and what gets shared back. These pages are ready for real updates from the community.</p>
-      </section>
-
-      <section class="operations-grid wrap" aria-label="Choose an operation">
-        <a class="operation-card" href="#fiveklick">
-          <span class="operation-mark" aria-hidden="true">5</span>
-          <div class="operation-top">
-            <span class="operation-index">OPERATION / 01</span>
-            <span class="operation-stamp">MOVE<br />TOGETHER</span>
-          </div>
-          <div>
-            <h2>5Klick</h2>
-            <p>Morning runs, shared photographs, and milestones made one day at a time.</p>
-            <span class="card-link">Enter operation <span aria-hidden="true">↘</span></span>
-          </div>
+        <a class="project-panel project-panel--fiveklick" href="./5Klick/index.html" aria-label="View the 5Klick project">
+          <span class="fiveklick-mark" aria-hidden="true">5KLICK</span>
+          <img class="fiveklick-object" src="./assets/5klick-runner.png" alt="" />
         </a>
-        <a class="operation-card operation-card--coi" href="#coi">
-          <span class="operation-mark" aria-hidden="true">?</span>
-          <div class="operation-top">
-            <span class="operation-index">OPERATION / 02</span>
-            <span class="operation-stamp">THINK<br />TOGETHER</span>
-          </div>
-          <div>
-            <h2>Court of Inquiry</h2>
-            <p>Twice-weekly conversations about the questions shaping the world around us.</p>
-            <span class="card-link">Enter operation <span aria-hidden="true">↘</span></span>
-          </div>
+
+        <a class="project-panel project-panel--inquiry" href="./connectws.html" aria-label="Contact us about the Court of Inquiry project">
+          <span class="coi-mark" aria-hidden="true">COI</span>
+          <img class="coi-object" src="./assets/coi-reader.png" alt="" />
         </a>
-      </section>
 
-      <section class="operation-details wrap" aria-label="Operation details">
-        <article class="operation-detail" id="fiveklick">
-          <div>
-            <p class="eyebrow">Operation / 01 · Movement</p>
-            <h2><span>THE MORNING MILE</span>5Klick</h2>
+        <nav class="project-pager" aria-label="Project shortcuts">
+          <a class="project-direction project-direction--previous" href="./5Klick/index.html">PREV</a>
+          <div class="project-dots" aria-label="Two projects">
+            <a href="./5Klick/index.html" aria-label="5Klick project"></a>
+            <a href="./connectws.html" aria-label="Contact about Court of Inquiry"></a>
           </div>
-          <div class="operation-detail-copy">
-            <p>5Klick is the group's everyday running practice: get out in the morning, move at your own pace, and share a little evidence of the effort. Photographs and personal milestones make the routine visible without turning it into a race.</p>
-            <h3>What gets shared</h3>
-            <div class="report-grid">
-              <div class="report-cell">
-                <span class="micro-label">01 / The moment</span>
-                <p>A photograph or short note from the morning.</p>
-              </div>
-              <div class="report-cell">
-                <span class="micro-label">02 / The milestone</span>
-                <p>A personal distance, consistency, or effort milestone.</p>
-              </div>
-            </div>
-            <h3>Field log</h3>
-            <p class="notice">No run updates have been published on this site yet. Add approved community photographs and milestones here as they are shared.</p>
-          </div>
-        </article>
-
-        <article class="operation-detail" id="coi">
-          <div>
-            <p class="eyebrow">Operation / 02 · Inquiry</p>
-            <h2><span>COURT OF INQUIRY</span>Ask better<br />questions.</h2>
-          </div>
-          <div class="operation-detail-copy">
-            <p>COI is a twice-weekly group conversation built around one specific topic—from inflation to changes in education. The point is to bring different perspectives into the room, think carefully, and leave with a record of what was learned.</p>
-            <h3>Each report captures</h3>
-            <div class="report-grid">
-              <div class="report-cell">
-                <span class="micro-label">01 / Icebreaker</span>
-                <p>A prompt that gets everyone into the conversation.</p>
-              </div>
-              <div class="report-cell">
-                <span class="micro-label">02 / Main speaker</span>
-                <p>The person who frames the topic and starts the inquiry.</p>
-              </div>
-              <div class="report-cell">
-                <span class="micro-label">03 / The discussion</span>
-                <p>Key perspectives, questions, and points of disagreement.</p>
-              </div>
-              <div class="report-cell">
-                <span class="micro-label">04 / Conclusion</span>
-                <p>The group's takeaways and what remains open.</p>
-              </div>
-            </div>
-            <h3>Session reports</h3>
-            <p class="notice">No session reports have been published on this site yet. The structure above is a guide, not a record of a real session.</p>
-          </div>
-        </article>
+          <a class="project-direction project-direction--next" href="./connectws.html">NEXT</a>
+        </nav>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <p>OUTLOUD / OPERATIONS</p>
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="./library.html">Read the Library</a><a href="./about.html">About</a><a href="./connectws.html">ConnectWS ↗</a>
-        </nav>
-      </div>
-    </footer>
   </body>
 </html>
