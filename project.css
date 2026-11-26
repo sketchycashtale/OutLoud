@@ -24,39 +24,57 @@
   position: absolute;
   z-index: 10;
   inset: 0 0 auto;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: start;
-  padding: 22px clamp(18px, 3.2vw, 48px);
+  display: flex;
+  height: 47px;
+  min-height: 47px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 6px clamp(20px, 5.5vw, 84px);
   pointer-events: none;
 }
 
-.project-toplink,
 .project-wordmark {
-  color: #080808;
-  font-family: var(--font-mono);
+  color: #fff;
+  font-family: var(--font-display);
   font-weight: 700;
   text-decoration: none;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  letter-spacing: -0.08em;
+  line-height: 0.9;
+  pointer-events: auto;
+  transform: translate(-52px, -24px) scaleY(1.4);
+  transform-origin: top left;
 }
 
-.project-toplink {
-  width: fit-content;
-  padding-top: 5px;
-  font-size: 9px;
-  letter-spacing: 0.06em;
+.project-primary-nav {
+  gap: clamp(12px, 2.45vw, 29px);
   pointer-events: auto;
 }
 
-.project-contact {
-  justify-self: end;
+.project-primary-nav a {
+  color: #151515;
 }
 
-.project-wordmark {
-  font-family: var(--font-display);
-  font-size: clamp(18px, 2vw, 25px);
-  letter-spacing: -0.07em;
-  line-height: 1;
+.project-primary-nav a:hover,
+.project-primary-nav a[aria-current="page"] {
+  color: #555;
+}
+
+.project-primary-nav .nav-cta,
+.project-primary-nav .nav-cta:hover {
+  border-color: rgba(0, 0, 0, 0.35);
+  color: #151515 !important;
+}
+
+.project-menu-toggle {
   pointer-events: auto;
+}
+
+.project-menu-toggle span,
+.project-menu-toggle::before,
+.project-menu-toggle::after {
+  background: #151515;
 }
 
 .project-panel {
@@ -140,6 +158,8 @@
   transform: translate(-50%, -55%);
   filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.16));
   transition:
+    top 460ms cubic-bezier(0.2, 0.75, 0.25, 1),
+    left 460ms cubic-bezier(0.2, 0.75, 0.25, 1),
     transform 460ms cubic-bezier(0.2, 0.75, 0.25, 1),
     filter 460ms ease;
 }
@@ -151,80 +171,59 @@
 }
 
 .fiveklick-object {
-  height: min(92%, 760px);
-  transform: translate(-50%, -50%);
+  top: 52%;
+  left: 48%;
+  height: min(74%, 620px);
+  transform: translate(-50%, -42%);
 }
 
 .project-panel--fiveklick:hover .fiveklick-object,
 .project-panel--fiveklick:focus-visible .fiveklick-object {
-  filter: drop-shadow(0 24px 20px rgba(0, 0, 0, 0.3));
-  transform: translate(-50%, -56%) scale(1.045);
-}
-
-.project-pager {
-  position: absolute;
-  z-index: 10;
-  inset: auto 0 0;
-  display: flex;
-  height: 48px;
-  align-items: stretch;
-  justify-content: space-between;
-  pointer-events: none;
-}
-
-.project-direction {
-  display: grid;
-  min-width: 50px;
-  place-items: center;
-  padding: 0 14px;
-  color: #fff;
-  background: #050505;
-  font-family: var(--font-mono);
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-decoration: none;
-  pointer-events: auto;
-}
-
-.project-direction--next {
-  color: #080808;
-  background: #fff;
-}
-
-.project-dots {
-  position: absolute;
   top: 50%;
   left: 50%;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transform: translate(-50%, -50%);
-  pointer-events: auto;
+  filter: drop-shadow(0 24px 20px rgba(0, 0, 0, 0.3));
+  transform: translate(-50%, -46%) scale(1.045);
 }
 
-.project-dots a {
-  width: 7px;
-  height: 7px;
-  border: 1px solid #111;
-  background: transparent;
-}
+@media (max-width: 850px) {
+  .project-topbar {
+    align-items: center;
+  }
 
-.project-dots a:first-child {
-  background: #111;
+  .project-menu-toggle {
+    margin-left: auto;
+  }
+
+  .project-primary-nav {
+    z-index: 11;
+    right: 12px;
+    left: auto;
+    width: min(230px, calc(100vw - 24px));
+    padding: 7px 16px 11px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+  }
+
+  .project-primary-nav a {
+    color: #151515;
+  }
+
+  .project-primary-nav a:hover,
+  .project-primary-nav a[aria-current="page"] {
+    color: #555;
+  }
+
+  .project-primary-nav .nav-cta,
+  .project-primary-nav .nav-cta:hover {
+    border-color: rgba(0, 0, 0, 0.35) !important;
+    color: #151515 !important;
+  }
 }
 
 @media (max-width: 650px) {
-  .project-topbar {
-    padding: 17px 16px;
-  }
-
-  .project-toplink {
-    font-size: 7px;
-  }
-
   .project-wordmark {
-    font-size: 20px;
+    font-size: clamp(2.6rem, 9vw, 4rem);
   }
 
   .coi-mark {
@@ -242,9 +241,9 @@
     max-width: none;
   }
 
-  .project-direction {
-    min-width: 42px;
-    padding-inline: 9px;
+  .fiveklick-object {
+    height: min(52svh, 450px);
+    max-height: 65%;
   }
 
 }

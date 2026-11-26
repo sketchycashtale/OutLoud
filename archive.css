@@ -356,6 +356,20 @@
   transform: rotate(5deg);
 }
 
+.artifact-photo--coi {
+  padding: 6px;
+}
+
+.coi-photo-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  flex: 1 1 auto;
+  object-fit: cover;
+  object-position: center;
+}
+
 .artifact-photo:hover,
 .artifact-photo:focus-visible {
   transform: translateY(-8px) rotate(2deg) scale(1.04);
@@ -368,6 +382,7 @@
   bottom: auto;
   width: 24%;
   height: 24vh;
+  padding: 3px;
   transform: rotate(3deg);
 }
 
@@ -384,22 +399,13 @@
   filter: grayscale(1) contrast(0.92);
 }
 
-.run-placeholder svg {
+.run-photo-image {
   display: block;
   width: 100%;
-  height: calc(100% - 22px);
+  height: 100%;
   flex: 1 1 auto;
-}
-
-.photo-caption {
-  display: flex;
-  min-height: 22px;
-  align-items: center;
-  padding: 0 5px;
-  color: #55544e;
-  font-family: var(--font-mono);
-  font-size: clamp(4px, 0.48vw, 6px);
-  letter-spacing: 0.045em;
+  object-fit: cover;
+  object-position: center 54%;
 }
 
 .artifact-console {
